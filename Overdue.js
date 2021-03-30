@@ -20,7 +20,7 @@ function calculate()
 
 
     //OUTPUT
-    //alert the gas cost
+    //alert the libary overdue fee
     alert(`You owe the Waukesha Public Library $${totalFee.toFixed(2)} in late fees.`);
 
 }
