@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trip Calculator</title>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+    <script src="TripCalcDay4.js"></script>
+    <style>
+        .output {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Trip Calculator</h1>
+    <fieldset>
+        <legend>Trip Information</legend>
+    <label for="totalMiles">Trip length in miles</label>
+    <input type="number" id="totalMiles" min="0" max="10000" step="0.5">
+    <br>
+    <label for="carMPG">Auto's MPG</label>
+    <input type="number" id="carMPG" value="30">
+    <br>
+    <label for="dollarsPerGallon">Cost of gas in dollars per gallon</label>
+    <input type="number" id="dollarsPerGallon">
+    <br>
+    <label for="avgSpeed">Average MPH driven</label>
+    <input type="number" id="avgSpeed">
+    <br>
+    </fieldset>
+    <button>Calculate My Trip</button>
+
+<p class="output"> It will cost $<span id="gasCost"></span> for gas.</p>
+<p class="output"> Your trip will take <span id="tripHours"></span></p>
+
+<P>Have a great day!</P>
+</body>
+</html>

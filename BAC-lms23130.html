@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BAC Calculator</title>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+    <script src="BAC-lms23130.js"></script>
+    <style>
+        .output {
+            display: none;
+        }
+    </style>
+
+
+</head>
+<body>
+<h1>Blood Alcohol Calculator</h1>
+<fieldset>
+    <legend>Drink Information</legend>
+    <label for="qtyBeer">Number of Beers Consumed</label>
+    <input type="number" id="qtyBeer" min="0" max="10" step="0.5">
+    <br>
+    <label for="qtyWine">Glasses of Wine Consumed</label>
+    <input type="number" id="qtyWine" min="0" max="10" step="0.5">
+    <br>
+    <label for="qtyShots">Number of Shots Consumed</label>
+    <input type="number" id="qtyShots" min="0" max="10" step="0.5">
+    <br>
+    <label for="drinkersWeight">Your Weight in Pounds</label>
+    <input type="number" id="drinkersWeight" min="0" max="250" step="0.5">
+    <br>
+    <label for="firstDrinkHours">Hours Since Your First Drink</label>
+    <input type="number" id="firstDrinkHours" min="0" max="24" step="0.5">
+    <br>
+</fieldset>
+<button>Calculate My BAC</button>
+
+<p class="output"> Your Blood Alcohol Content (BAC) is <span id="bloodAC"></span>%</p>
+
+<P>Buckle Up!  Please Do Not Drink and Drive.</P>
+</body>
+</html>
